@@ -1,2 +1,4 @@
 # Lyrical-GraphQL
-Starter project from a GraphQL course on Udemy.com
+Lyrics Based React App and GraphQL. 
+
+Credits: Udemy.com
