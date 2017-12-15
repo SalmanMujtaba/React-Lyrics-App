@@ -11,10 +11,12 @@ import './style/style.css';
 
 
 //Assumes the localhost:4000/graphql endpoint
-const client = new ApolloClient({});
+const client = new ApolloClient({
+  dataIdFromObject: o=>o.id
+});
 
 const Root = () => {
-  
+  //songlist etc all become children of App
   return (
     <ApolloProvider client={client}>
       <Router history={hashHistory}>
